@@ -1,0 +1,144 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+    	<RelativeLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginBottom="10dip">
+
+    	    <TextView
+    	        android:id="@+id/tvStep1"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_alignParentTop="true"
+    	        android:alpha=".3"
+    	        android:paddingLeft="20dip"
+    	        android:text="Step 1"
+    	        android:textColor="@android:color/black"
+    	        android:textSize="48sp"
+    	        android:textStyle="bold|italic" />
+
+    	    <TextView
+    	        android:id="@+id/tvStep1Heading"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignBottom="@+id/tvStep1"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_alignParentRight="true"
+    	        android:gravity="center_horizontal"
+    	        android:text="Generate API Key"
+    	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    	    <TextView
+    	        android:id="@+id/tvLogin"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_below="@+id/tvStep1"
+    	        android:layout_margin="10dip"
+    	        android:text="Login to your Havelock Investments account and go to the &quot;API Setup&quot; page." />
+
+    	    <ImageView
+    	        android:id="@+id/imgAPIAccess"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@+id/tvLogin"
+    	        android:layout_centerHorizontal="true"
+    	        android:src="@drawable/apiaccess" />
+
+    	    <TextView
+    	        android:id="@+id/tvCreateAPIKey"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_below="@+id/imgAPIAccess"
+    	        android:layout_margin="10dip"
+    	        android:text="Create an API key for myHavelock to use in order to access your portfolio." />
+
+    	    <ImageView
+    	        android:id="@+id/imgCreateAPIKey"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@+id/tvCreateAPIKey"
+    	        android:layout_centerHorizontal="true"
+    	        android:src="@drawable/createnewapikey" />
+
+    	    <TextView
+    	        android:id="@+id/tvAPIPermissions"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_below="@+id/imgCreateAPIKey"
+    	        android:layout_margin="10dip"
+    	        android:text="Allow the previously generated API key access to your Havelock Investments portfolio, as indicated below, and choose &quot;Save Key Permissions&quot;. This is the only permission required for myHavelock." />
+
+    	    <ImageView
+    	        android:id="@+id/imgAPICalls"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@+id/tvAPIPermissions"
+    	        android:layout_centerHorizontal="true"
+    	        android:src="@drawable/apicalls" />
+    	    
+    	    <TextView
+    	        android:id="@+id/tvStep2"
+    	        android:layout_below="@+id/imgAPICalls"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentLeft="true"
+    	        android:alpha=".3"
+    	        android:paddingLeft="20dip"
+    	        android:text="Step 2"
+    	        android:textColor="@android:color/black"
+    	        android:textSize="48sp"
+    	        android:textStyle="bold|italic" />
+
+    	    <TextView
+    	        android:id="@+id/tvStep2Heading"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignBottom="@+id/tvStep2"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_alignParentRight="true"
+    	        android:gravity="center_horizontal"
+    	        android:text="Configure myHavelock"
+    	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    	    <TextView
+    	        android:id="@+id/tvSaveAPIKey"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_below="@+id/tvStep2"
+    	        android:layout_margin="10dip"
+    	        android:text="Save the previously generated and configured API key here in myHavelock by typing or pasting it in the text box below." />
+    	    
+    	    <EditText 
+    	        android:id="@+id/txtAPIKey"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_alignParentRight="true"
+    	        android:singleLine="true"
+    	        android:layout_below="@+id/tvSaveAPIKey"
+    	        android:layout_margin="10dip" />
+    	    
+    	    <Button 
+    	        android:id="@+id/btnSave"
+    	        android:text="Save API Key"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_below="@+id/txtAPIKey"
+    	        android:layout_margin="10dip"
+    	         />
+    	    
+    	</RelativeLayout>
+
+</ScrollView>

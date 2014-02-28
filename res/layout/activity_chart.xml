@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    
+    <LinearLayout 
+        android:id="@+id/llChartLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+        <TextView
+	        android:id="@+id/tvChartHeader"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingRight="10dip"
+	        android:paddingLeft="10dip"
+	        android:paddingTop="10dip"
+	        android:textColor="@android:color/black"
+	        android:textStyle="bold|italic"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:text="@string/chart_header" />
+    </LinearLayout>
+    
+    <ImageView
+	    android:id="@+id/imgAlert"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="visible"
+	    android:gravity="center"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:src="@drawable/alert"
+	    android:scaleType="center"
+	    android:alpha=".3" />
+	
+	<TextView
+	    android:id="@+id/tvMessage"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:gravity="center"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:textSize="16sp"
+	    android:textStyle="bold|italic" />
+	
+	<TextView
+        android:id="@+id/tvMessageHeading"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_above="@id/tvMessage"
+        android:alpha=".3"
+        android:paddingLeft="20dip"
+        android:textColor="@android:color/black"
+        android:textSize="48sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

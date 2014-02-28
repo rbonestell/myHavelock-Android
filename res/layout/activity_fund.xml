@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+    <TextView
+        android:id="@+id/tvFundHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingRight="10dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/fund_name_placeholder" />
+    
+    <RelativeLayout
+	    android:id="@+id/rlFundDetails"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tvFundHeader">
+
+        <LinearLayout
+	        android:id="@+id/llQuantity"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="10dp">
+
+	        <TextView
+		        android:id="@+id/tvQuantityHeader"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:layout_weight="1"
+		        android:text="@string/quantity"
+		        android:paddingRight="15dp"
+		        android:textStyle="bold" />
+   	        <TextView
+		        android:id="@+id/tvQuantity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/llBookVal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/llQuantity"
+	        android:orientation="horizontal"
+	        android:paddingTop="10dp" >
+	        <TextView
+		        android:id="@+id/tvBookValHeader"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:layout_weight="1"
+		        android:text="@string/book"
+		        android:paddingRight="15dp"
+		        android:textStyle="bold" />
+   	        <TextView
+		        android:id="@+id/tvBookVal"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/llMarketVal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/llBookVal"
+	        android:orientation="horizontal"
+	        android:paddingTop="10dp" >
+
+	        <TextView
+		        android:id="@+id/tvMarketValHeader"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:layout_weight="1"
+		        android:text="@string/market"
+		        android:paddingRight="15dp"
+		        android:textStyle="bold" />
+   	        <TextView
+		        android:id="@+id/tvMarketVal"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" />
+	    </LinearLayout>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tvTradeHistoryHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlFundDetails"
+        android:gravity="center"
+        android:paddingRight="10dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="20dip"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/trade_history_heading" />
+    
+    <TextView
+        android:id="@+id/tvFundSymbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="20dp"
+        android:paddingTop="10sp"
+        android:alpha=".15"
+        android:text="@string/symbol_placeholder"
+        android:textColor="@android:color/black"
+        android:textSize="48sp"
+        android:textStyle="bold|italic" />
+    
+    <ImageView
+	    android:id="@+id/imgFundUpDown"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:gravity="center"
+	    android:paddingLeft="20sp"
+	    android:paddingTop="50sp"
+	    android:src="@drawable/uparrow"
+	    android:scaleType="center"
+	    android:contentDescription="@string/fund_performance_indicator" />
+    
+    <RelativeLayout
+	    android:id="@+id/rlChartButton"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/grey" >
+	    <ImageView
+		    android:id="@+id/imgChart"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	
+		    android:layout_centerVertical="true"	    
+		    android:gravity="center"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:src="@drawable/chart"
+		    android:scaleType="center"
+		    android:contentDescription="@string/chart_icon" />
+	    <ImageView
+		    android:id="@+id/imgRightArrow"
+		    android:layout_width="wrap_content"
+		    android:layout_height="42dip"
+		    android:layout_alignParentRight="true"		    
+		    android:gravity="center"
+		    android:padding="5dp"
+		    android:src="@drawable/rightarrow"
+		    android:scaleType="center"
+		    android:contentDescription="@string/right_arrow" />
+        <TextView
+	        android:id="@+id/tvGoToChart"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dp"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@id/imgRightArrow"
+	        android:layout_toRightOf="@id/imgChart"
+	        android:text="@string/performance_charts"
+	        android:gravity="center"
+	        android:textStyle="bold"
+	        android:textColor="@android:color/white" />
+	</RelativeLayout>
+    
+    <ListView
+        android:id="@+id/lvTrades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTradeHistoryHeader"
+        android:layout_above="@id/rlChartButton"
+        android:dividerHeight="0dp"
+		android:divider="@null"
+		 />
+    
+	<RelativeLayout
+	    android:id="@+id/rlAlert"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/tvTradeHistoryHeader"
+        android:layout_above="@id/rlChartButton"
+	    android:visibility="visible">
+	    <ImageView
+		    android:id="@+id/imgFundAlert"
+		    android:layout_width="match_parent"
+		    android:layout_height="fill_parent"		    
+		    android:gravity="center"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:src="@drawable/alert"
+		    android:scaleType="center"
+		    android:alpha=".3"
+		    android:contentDescription="@string/alert_icon" />
+		
+		<TextView
+		    android:id="@+id/tvFundMessage"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:gravity="center"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:textSize="16sp"
+		    android:textStyle="bold|italic" />
+		
+		<TextView
+	        android:id="@+id/tvFundMessageHeading"
+		    android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_above="@id/tvFundMessage"
+	        android:paddingLeft="20dip"
+	        android:alpha=".3"
+	        android:textColor="@android:color/black"
+	        android:textSize="48sp"
+	        android:textStyle="bold|italic" />
+	</RelativeLayout>
+
+</RelativeLayout>
