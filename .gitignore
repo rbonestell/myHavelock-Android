@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/android,osx,intellij
+# Created by https://www.gitignore.io/api/android,osx,intellij,gradle
 
 ### Android ###
 # Built application files
@@ -116,4 +116,18 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+
+### Gradle ###
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
 
