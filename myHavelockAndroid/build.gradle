@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.rbonestell.myhavelock"
+        minSdkVersion 16
+        targetSdkVersion 18
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile files('libs/jackson-annotations-2.1.1.jar')
+    compile files('libs/jackson-core-2.1.1.jar')
+    compile files('libs/jackson-databind-2.1.1.jar')
+    compile files('libs/stock-chart.jar')
+    compile 'com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1'
+}
