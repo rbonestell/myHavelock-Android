@@ -2,6 +2,7 @@ myHavelock for Android [![Build Status](https://travis-ci.org/rbonestell/myHavel
 ==================
 Monitor your Havelock Investments portfolio on your Android device!
 
+[![Download on Google Play](https://developer.android.com/images/brand/en_generic_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.rbonestell.myhavelock)
 
 The MIT License (MIT)
 
