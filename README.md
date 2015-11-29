@@ -1,4 +1,4 @@
-myHavelock for Android ![Build Status](https://api.travis-ci.org/rbonestell/myHavelock-Android.svg)
+myHavelock for Android [![Build Status](https://travis-ci.org/rbonestell/myHavelock-Android.svg)](https://travis-ci.org/rbonestell/myHavelock-Android)
 ==================
 Monitor your Havelock Investments portfolio on your Android device!
 
