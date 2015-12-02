@@ -1,4 +1,4 @@
-myHavelock for Android [![Build Status](https://travis-ci.org/rbonestell/myHavelock-Android.svg)](https://travis-ci.org/rbonestell/myHavelock-Android) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/rbonestell/myHavelock-Android/master/LICENSE)
+myHavelock for Android [![Build Status](https://travis-ci.org/rbonestell/myHavelock-Android.svg?branch=development)](https://travis-ci.org/rbonestell/myHavelock-Android) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/rbonestell/myHavelock-Android/master/LICENSE)
 ==================
 Monitor your Havelock Investments portfolio on your Android device!
 
